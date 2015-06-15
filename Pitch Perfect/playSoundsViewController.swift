@@ -30,31 +30,25 @@ class PlaySoundsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func playBack(){
+    func playAtRate(rate: Float){
         // it's good practice to stop before playing
-        audioPlayer.stop()
-        audioPlayer.currentTime = 0
+        stopAllAudio()
+        audioPlayer.rate = rate
         audioPlayer.play()
     }
     
     @IBAction func playSlowly(sender: UIButton) {
-        audioEngine.reset()
-        audioPlayer.rate = 0.5
-        playBack()
+        playAtRate(0.5)
     }
 
     @IBAction func playFast(sender: UIButton) {
-        audioEngine.reset()
-        audioPlayer.rate = 1.5
-        playBack()
+        playAtRate(1.5)
     }
     
     // type: Float (capital F)
     func playAudioWithVariablePitch(pitch:Float){
         // make sure to stop playing
-        audioPlayer.stop()
-        audioEngine.stop()
-        audioEngine.reset()
+        stopAllAudio()
         
         // audioPlayerNode represents our audio file, and attach to engine
         var audioPlayerNode = AVAudioPlayerNode()
@@ -90,7 +84,15 @@ class PlaySoundsViewController: UIViewController {
         audioEngine.stop()
         audioEngine.reset()
         // how to reset to the start?
-        // set currentTime = 0 in the play funcs
+        // set currentTime = 0
+        audioPlayer.currentTime = 0
+    }
+    
+    func stopAllAudio(){
+        audioPlayer.stop()
+        audioPlayer.currentTime = 0
+        audioEngine.stop()
+        audioEngine.reset()
     }
     
     /*

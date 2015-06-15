@@ -9,7 +9,7 @@
         <!--Record-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Record" id="vXZ-lx-hvc" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -110,15 +110,15 @@
             </objects>
             <point key="canvasLocation" x="1297.5" y="337"/>
         </scene>
-        <!--Play Sounds View Controller-->
+        <!--Audio Effects-->
         <scene sceneID="QzQ-u3-QZs">
             <objects>
-                <viewController id="9lX-rD-IQV" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Audio Effects" id="9lX-rD-IQV" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RE9-Yh-kgi"/>
                         <viewControllerLayoutGuide type="bottom" id="tQR-C9-U1J"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Omq-Wx-6EF" customClass="PlaySoundsViewCon">
+                    <view key="view" contentMode="scaleToFill" id="Omq-Wx-6EF" userLabel="View" customClass="PlaySoundsViewCon">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
