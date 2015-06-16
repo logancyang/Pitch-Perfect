@@ -113,7 +113,7 @@
         <!--Audio Effects-->
         <scene sceneID="QzQ-u3-QZs">
             <objects>
-                <viewController title="Audio Effects" id="9lX-rD-IQV" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9lX-rD-IQV" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RE9-Yh-kgi"/>
                         <viewControllerLayoutGuide type="bottom" id="tQR-C9-U1J"/>
@@ -230,6 +230,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Audio Effects" id="loG-iq-Hhr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Sn-cq-IEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
